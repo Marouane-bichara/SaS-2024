@@ -10,7 +10,7 @@ int main()
     printf("Entrez le rayon de la sphere : ");
     scanf("%f", &radius);
 
-    volume = (4/3) * PI * pow(radius, 2);
+    volume = (4/3) * PI * pow(radius, 3s);
     
     printf("le volume de la sphere est: " , volume);
 
