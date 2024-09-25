@@ -18,5 +18,7 @@ int main()
     printf("%d" , d);
     printf("%d" , f);
     printf("%d" , g);
+
+    
     return 0;
 }
