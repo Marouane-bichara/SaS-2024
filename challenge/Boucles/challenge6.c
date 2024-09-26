@@ -1,18 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int number;
+    int i = 1;
+    int resault;
 
-    printf("Enter an integer: ");
-    scanf("%d", &n);
+    printf("Entrez un numero: ");
+    scanf("%d" , &number);
 
+    while (i <= number)
+    {
 
-    printf("le premier %d nombre pair est: ", n);
-    for (int i = 1; i <= n; i++) {
-        printf("%d", 2 * i);
-        if (i < n) {
-            printf(", ");  
+        resault =   2 * i;
+        printf("%d", resault);
+
+        if (number > i)
+        {
+            printf(", ");
         }
+            i++; 
+        
     }
+    
+ 
     return 0;
 }

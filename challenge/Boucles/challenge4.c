@@ -1,25 +1,26 @@
 #include <stdio.h>
 
-int main()
-{
-    int num;
-    printf("Entrez un numero : ");
-    scanf("%d", &num);
+int main() {
+    int number;
+    int i = 0;
+    int resault;
 
-  
-    int num2 = 1;
+    printf("Entrez un numero: ");
+    scanf("%d" , &number);
 
-    for (int i = 0; i < num; i++)
+    while (number > i)
     {
-        if (num2 <= num)
+        resault = 2 * i + 1;
+        i++;
+        printf("%d", resault);
+        if (number != i)
         {
-            if (num2 % 2 != 0)
-            {
-            printf("%d", num2);
-            }
-
+            printf(", ");
         }
-        num2++;
+        
+        
     }
+    
+ 
     return 0;
 }
