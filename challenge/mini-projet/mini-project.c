@@ -92,9 +92,9 @@ int main()
         printf("____________________\n");
         printf("\n");
         printf("Titre du livre : ");
-        scanf("%s" , &InfoLivre[count].Titre);
+        scanf("%s" , InfoLivre[count].Titre);
         printf("Auteur du livre : ");
-        scanf("%s", &InfoLivre[count].Auteur);
+        scanf("%s", InfoLivre[count].Auteur);
         printf("Prix du livre : ");
         scanf("%f" , &InfoLivre[count].Prix);
         printf("Quantite en stock : ");
