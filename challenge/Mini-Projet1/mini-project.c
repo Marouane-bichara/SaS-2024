@@ -133,7 +133,7 @@ int main()
         printf("____________________\n");
         printf("\n");
         printf("chercher un livre : ");
-        scanf("%s" , &Nome);
+        scanf("%s" , Nome);
         for (int i = 0; i < count; i++)
         {
             if (strcmp(Nome , InfoLivre[i].Titre) == 0)
@@ -162,7 +162,7 @@ int main()
         printf("____________________\n");
         printf("\n");
         printf("chercher un livre : ");
-        scanf("%s" , &Nome);
+        scanf("%s" , Nome);
         for (int i = 0; i < count; i++)
         {
             if (strcmp(Nome , InfoLivre[i].Titre) == 0)
@@ -192,7 +192,7 @@ int main()
         char Livre[100];
         int found = 0;
         printf("Entrez le nom du livre: ");
-        scanf("%s" , &Livre);
+        scanf("%s" , Livre);
 
         for (int i = 0; i < count; i++)
         {
