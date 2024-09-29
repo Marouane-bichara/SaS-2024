@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 
 
@@ -51,20 +52,26 @@ int main()
      {
      case 1:
         ajouter();
+        system("cls");
         break;
      case 2:
+        system("cls");
         Livre_diso();
         break;
      case 3:
+        system("cls");
         Recherche();
         break;
      case 4:
+        system("cls");
         Update();
         break;
      case 5:
+        system("cls");
         Delete();
         break;
      case 6:
+        system("cls");
         CountLivre();
         break;
      case 7:
@@ -98,8 +105,6 @@ int main()
 
     void Livre_diso()
     {
-        printf("\n");
-        printf("____________________\n");
         printf("\n");
         for (int i = 0; i < count; i++)
         {
@@ -135,8 +140,6 @@ int main()
             {
                 printf("Entrez une nouvelle quantite: ");
                 scanf("%d", &InfoLivre[i].Quantite);
-                printf("Entrez un nouveau nom : ");
-                scanf("%s" , &InfoLivre[i].Titre);
                 found = 1;
             } 
         }
