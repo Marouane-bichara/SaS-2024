@@ -20,6 +20,7 @@ int count;
 
 
 void ajouter();
+void Sorting();
 void Livre_diso();
 void Update();
 void Recherche();
@@ -52,6 +53,7 @@ int main()
      {
      case 1:
         ajouter();
+        Sorting();
         system("cls");
         break;
      case 2:
@@ -101,6 +103,26 @@ int main()
         scanf("%d" , &InfoLivre[count].Quantite);
         printf("\n");
         count++;
+    }
+
+    void Sorting()
+    {
+        AddBooks temp;
+        for (int i = 0; i < count - 1; i++)
+        {
+            for (int j = 0; j < count - i - 1; j++)
+            {
+                if (strcmp(InfoLivre[j].Titre, InfoLivre[j+1].Titre) > 0)
+                {
+                   temp = InfoLivre[j];
+                   InfoLivre[j] = InfoLivre[j + 1];
+                   InfoLivre[j + 1] = temp; 
+                }
+                
+            }
+               
+        }
+        
     }
 
     void Livre_diso()
