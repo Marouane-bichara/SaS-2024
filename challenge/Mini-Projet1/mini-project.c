@@ -90,18 +90,18 @@ int main()
 
     void ajouter()
     {
-        printf("\n");
-        printf("____________________\n");
-        printf("\n");
-        printf("Titre du livre : ");
-        scanf("%s" , InfoLivre[count].Titre);
-        printf("Auteur du livre : ");
-        scanf("%s", InfoLivre[count].Auteur);
-        printf("Prix du livre : ");
-        scanf("%f" , &InfoLivre[count].Prix);
-        printf("Quantite en stock : ");
-        scanf("%d" , &InfoLivre[count].Quantite);
-        printf("\n");
+            printf("\n");
+            printf("____________________\n");
+            printf("\n");
+            printf("Titre du livre : ");
+            scanf("%s" , InfoLivre[count].Titre);
+            printf("Auteur du livre : ");
+            scanf("%s", InfoLivre[count].Auteur);
+            printf("Prix du livre : ");
+            scanf("%f" , &InfoLivre[count].Prix);
+            printf("Quantite en stock : ");
+            scanf("%d" , &InfoLivre[count].Quantite);
+            printf("\n");
         count++;
     }
 
@@ -112,15 +112,13 @@ int main()
         {
             for (int j = 0; j < count - 1; j++)
             {
-                if (strcmp(InfoLivre[j].Titre, InfoLivre[j+1].Titre) > 0)
+                if (strcasecmp(InfoLivre[j].Titre, InfoLivre[j+1].Titre) > 0)
                 {
                    temp = InfoLivre[j];
                    InfoLivre[j] = InfoLivre[j + 1];
-                   InfoLivre[j + 1] = temp; 
-                }
-                
-            }
-               
+                   InfoLivre[j + 1] = temp;
+                }   
+            }  
         }
         
     }
@@ -158,7 +156,7 @@ int main()
         scanf("%s" , Nome);
         for (int i = 0; i < count; i++)
         {
-            if (strcmp(Nome , InfoLivre[i].Titre) == 0)
+            if (strcasecmp(Nome , InfoLivre[i].Titre) == 0)
             {
                 printf("Entrez une nouvelle quantite: ");
                 scanf("%d", &InfoLivre[i].Quantite);
@@ -169,12 +167,8 @@ int main()
         {
             printf("____________________\n");
             printf("                      \n");
-            printf("Livre introuvable.");
-            
+            printf("Livre introuvable.");   
         }
-        
-        
-        
     }
 
     void Recherche()
@@ -219,7 +213,7 @@ int main()
 
         for (int i = 0; i < count; i++)
         {
-            if (strcmp(InfoLivre[i].Titre , Livre) == 0)
+            if (strcasecmp(InfoLivre[i].Titre , Livre) == 0)
             {
                 for (int j = i; j < count - 1; j++)
                 {

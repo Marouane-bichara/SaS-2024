@@ -120,7 +120,7 @@ void Edit()
 
     for (int i = 0; i < count; i++)
     {
-        if (strcmp(nome , contactInfo[i].Nome) == 0)
+        if (strcasecmp(nome , contactInfo[i].Nome) == 0)
         {
             printf("Entrez un nouveau numero de contact : ");
             scanf("%s" , contactInfo[i].Phone);
@@ -146,7 +146,7 @@ void Delete()
 
     for (int i = 0; i < count; i++)
     {
-        if (strcmp(contactInfo[i].Nome , nome) == 0)
+        if (strcasecmp(contactInfo[i].Nome , nome) == 0)
         {
             for (int j = i; i < count - 1; i++)
             {
