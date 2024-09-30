@@ -15,7 +15,7 @@ int main()
 {
     char text[100];
     printf("Entrez une chaine : ");
-    scanf("%[^\n]" , &text);
+    scanf("%s" , text);
 
     length(text);
 }
