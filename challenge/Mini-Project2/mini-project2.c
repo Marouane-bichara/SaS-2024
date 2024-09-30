@@ -199,7 +199,7 @@ void Rechercher()
 
     for (int i = 0; i < count; i++)
     {
-        if (strcmp(Nome , contactInfo[i].Nome) == 0)
+        if (strcasecmp(Nome , contactInfo[i].Nome) == 0)
         {
             printf("____________________\n");
             printf("                      \n");

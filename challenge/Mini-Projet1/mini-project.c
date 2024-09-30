@@ -188,7 +188,7 @@ int main()
         scanf("%s" , Nome);
         for (int i = 0; i < count; i++)
         {
-            if (strcmp(Nome , InfoLivre[i].Titre) == 0)
+            if (strcasecmp(Nome , InfoLivre[i].Titre) == 0)
             {
                 printf("____________________\n");
                 printf("                      \n");
