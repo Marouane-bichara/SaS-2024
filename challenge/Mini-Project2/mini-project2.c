@@ -59,6 +59,7 @@ int main()
     case 5:
         system("cls");
         Rechercher();
+        break;
     case 6:
         printf("____________________\n");
         printf("                      \n");
