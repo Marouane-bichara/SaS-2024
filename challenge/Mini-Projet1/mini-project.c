@@ -108,9 +108,9 @@ int main()
     void Sorting()
     {
         AddBooks temp;
-        for (int i = 0; i < count - 1; i++)
+        for (int i = 0; i < count ; i++)
         {
-            for (int j = 0; j < count - i - 1; j++)
+            for (int j = 0; j < count - 1; j++)
             {
                 if (strcmp(InfoLivre[j].Titre, InfoLivre[j+1].Titre) > 0)
                 {
@@ -170,6 +170,7 @@ int main()
             printf("____________________\n");
             printf("                      \n");
             printf("Livre introuvable.");
+            
         }
         
         
