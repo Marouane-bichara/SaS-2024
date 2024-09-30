@@ -15,6 +15,7 @@ int count;
 
 
 void ajouter();
+void sort();
 void Edit();
 void Delete();
 void AfficherTous();
@@ -42,6 +43,7 @@ int main()
     {
     case 1:
         ajouter();
+        sort();
         system("cls");
         break;
     case 2:
@@ -84,6 +86,26 @@ void ajouter()
         scanf("%s" , contactInfo[count].Email);
         printf("\n");
         count++;
+}
+
+void sort()
+{
+    Contact temp;
+    for (int i = 0; i < count; i++)
+    {
+        for (int j = 0; j < count - 1; j++)
+        {
+            if (strcmp(contactInfo[j].Nome , contactInfo[j + 1].Nome) > 0)
+            {
+                temp = contactInfo[j];
+                contactInfo[j] = contactInfo[j + 1];
+                contactInfo[j + 1] = temp;
+            }
+            
+        }
+        
+    }
+    
 }
 
 void Edit()
